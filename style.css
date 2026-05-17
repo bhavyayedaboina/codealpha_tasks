@@ -1,0 +1,402 @@
+.buttons{
+ display:flex;
+ justify-content:center;
+ align-items:center;
+ gap:20px;
+ border-radius:100px;
+ padding:20px 20px;
+} 
+body{
+ display:flex;
+ 
+ justify-content:center;
+ 
+ align-items:center;
+ 
+ padding:0px;
+ 
+ margin:0px;
+ 
+ min-height:100vh;
+ 
+  background:linear-gradient(
+    135deg,
+    #000000,
+    #0f0f0f,
+    #111827,
+    #000000
+ );
+ 
+ background-size:100% 100%;
+ 
+ animation:bgmv 12s ease infinite;
+ 
+ overflow:hidden;
+} 
+
+@keyframes bgmv{
+        0%{
+         background-position:0% 50%;
+        }
+        50%{
+         background-position:100% 50%;
+        }
+        100%{
+         background-position:0% 50%;
+        }
+}
+
+/* placing starts in the background,I think it looks beautiful */
+ .stars{
+    position:fixed;
+    padding:10px;
+    
+    width:100%;
+    
+    height:100%;
+    
+    background:
+             radial-gradient(white 2px,transparent 2px); /*this radial gradient creates elements into circular shapes */
+             radial-gradient(cyan 3px,transparent 3px);
+             radial-gradient(#00f7ff 2px, transparent 2px); 
+             
+   background-size:
+             120px 120px;
+             180px 180px;
+             250px 250px;                   
+    
+   animation:starsmv 8s linear infinite;
+   
+   opacity:0.5; /* start become half visible,1 for fully visible */
+   
+   z-index:-1; /* start moves behind the elements like buttons */
+   
+  
+}
+@keyframes starsmv{
+
+   from{
+      background-position:
+         0 0,
+         0 0,
+         0 0;
+   }
+
+   to{
+      background-position:
+         0 -120px,
+         0 -180px,
+         0 -250px;
+   }
+}      
+    
+#player{
+background-color:#1e1e1e;
+
+padding:30px;
+
+border-radius:20px;
+
+width:400px;
+
+height:90vh;
+
+overflow-y:auto;
+
+text-align:center;
+
+background:#111;
+
+box-shadow:5px 5px 20px cyan;
+
+scrollbar-width:none;
+}
+
+h2{
+
+color:white;
+
+}
+
+#cover{
+width:220px;
+height:220px;
+object-fit:cover;   
+border-radius:50%;
+margin-bottom:20px;
+animation:rotate 5s linear infinite;
+animation-play-state:paused;
+}
+
+#progress{
+/*width:100%;
+margin:20px 0;*/
+flex:1;
+}
+
+button{
+background-color:#222;
+border:none;
+padding:20px;
+border-radius:50%;
+font-size:30px;
+transition:0.5s;
+box-shadow:0 0 15px #00f7ff;
+color:black;
+}
+
+button:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px #00f7ff;
+cursor:pointer;
+}
+
+@keyframes rotate{
+  
+  from{
+   transform:rotate(0deg);
+   }
+  to{
+    transform:rotate(360deg);
+   }
+} 
+   
+/*playlist design*/ 
+#playlist{
+   margin-top:20px;
+   display:none;
+ }
+ 
+ 
+ /*songs displaying in list*/
+ .song-item{
+   padding:20px;
+   margin:10px 0;
+   border-radius:25px;
+   background-color:#222;
+   color:white;
+   transition:0.5s;
+ }
+ 
+ .song-item:hover{
+ background-color:#00f7ff;
+ color:black;
+ cursor:pointer;
+ transform:scale(1.0);
+}   
+
+/*volume control*/
+
+.volume-control{
+    margin-top:10px;
+    text-align:center;
+    display:flex;
+    color:white;
+    gap:10px;
+ }
+ 
+ #volume{
+  width:100%;
+}  
+
+/* timer for song displaying*/
+
+#timer{
+    /*display:flex;*/
+    text-align:right;
+    color:white;
+    margin-top:10px;
+    font-size:15px;
+    justify-content:right;
+    gap:10px;
+    white-space:nowrap;
+ } 
+ /*progress bar and timer in this div section*/
+ 
+ .progress-container{
+  display:flex;
+  margin-top:20px;
+  align-items:center;
+}
+
+.volume-wrapper{
+   position:relative;
+}
+
+.volume-popup{
+    position:absolute;
+
+    bottom:230px;   /* places slider above buttons */
+    right:10px;    /* moves near volume button */
+
+    width:40px;
+    height:160px;
+
+    background:#1f1f1f;
+    border-radius:20px;
+
+    display:none;
+
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 0 20px cyan;
+
+    transition:0.3s ease;
+}
+/* VERTICAL SLIDER */
+
+#volume{
+    writing-mode: vertical-lr;
+    direction: rtl;
+
+    width: 8px;
+    height: 120px;
+}
+
+
+.volume-popup{
+    transition: 0.3s ease;
+}
+
+/*volumw button designing */
+/*#volumeBtn{
+   position:absolute;
+   left:-60px;
+   bottom:20px;
+   color:white;
+   width:20px;
+   height:20px;
+   border-radius:50%;
+   background-color:#222;
+   border:none;
+   box-shadow:0 0 15px #222;
+   cursor:pointer;
+   font-size:14px;
+   transition:0.5s;
+   box-shadow:0 0 15px cyan;
+}
+   
+
+.cover-container{
+
+   position:relative;
+
+   width:220px;
+
+   margin:auto;
+}
+/* Adding favourite songs by clicking this symbol 
+
+#likedBtn{
+
+   position:absolute;
+
+   right:-60px;
+
+   bottom:20px;
+
+   background:#222;
+
+   color:white;
+
+   border:none;
+
+   width:20px;
+
+   height:20px;
+
+   border-radius:50%;
+
+   font-size:14px;
+
+   cursor:pointer;
+
+   box-shadow:0 0 15px cyan;
+
+   transition:0.3s;
+   text-align:center;
+}  */  
+
+/*keeping that volume and liked symbols in middle of that circle */
+
+.sideBtn{
+   display:flex;
+   justify-content:center;
+   align-items:center;
+   width:10px;
+   height:10px;
+}   
+  
+  
+#favTitle{
+   color:white;
+   margin-top:20px;
+}
+
+#favoriteList{
+   margin-top:10px;
+}
+
+.favorite-song{
+   background:#222;
+   color:white;
+   padding:12px;
+   border-radius:15px;
+   margin:8px 0;
+   transition:0.3s;
+}
+
+.favorite-song:hover{
+   background:#00f7ff;
+   color:black;
+}
+
+/* space between heart and volume symbols and proper alignment */
+
+/* TOP ICONS CONTAINER */
+
+.top-icons{
+   display:flex;
+   justify-content:space-between;
+   align-items:center;
+
+   width:220px;
+   margin:15px auto;
+}
+
+/* VOLUME + HEART BUTTONS */
+
+#volumeBtn,
+#favBtn{
+
+   width:55px;
+   height:55px;
+
+   border-radius:50%;
+   border:none;
+
+   font-size:28px;
+
+   background:#222;
+   color:white;
+
+   display:flex;
+   justify-content:center;
+   align-items:center;
+
+   cursor:pointer;
+
+   box-shadow:0 0 15px cyan;
+
+   transition:0.4s;
+}
+
+/* HOVER EFFECT */
+
+#volumeBtn:hover,
+#favBtn:hover{
+
+   transform:scale(1.1);
+}             
+       
