@@ -49,7 +49,31 @@ music_player/
 │   ├── mom.jpeg
 │   └── friends.jpeg
 │
+└── README.md## 📂 Folder Structure
+
+```plaintext
+music_player/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── songs/
+│   ├── Inthandham.mp3
+│   ├── I-Wanna-Be-Yours.mp3
+│   ├── Kollagotte.mp3
+│   ├── Amma Amma Nee Vennela.mp3
+│   └── Adhento Gaani Vunnapaatuga.mp3
+│
+├── images/
+│   ├── bhavya.png
+│   ├── bhavya2.jpeg
+│   ├── anju.jpeg
+│   ├── mom.jpeg
+│   └── friends.jpeg
+│
 └── README.md
+```
 
 
 🚀 How to Run the Project
@@ -58,7 +82,7 @@ music_player/
 
 Download or clone this repository.
 
-git clone https://github.com/your-username/music-player.git
+git clone https://github.com/bhavyayedaboina/music-player.git
 
 
 
