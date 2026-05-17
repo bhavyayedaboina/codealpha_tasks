@@ -47,7 +47,7 @@ music_player/
 │   ├── bhavya2.jpeg
 │   ├── anju.jpeg
 │   ├── mom.jpeg
-│   └── mugguru.jpeg
+│   └── friends.jpeg
 │
 └── README.md
 
@@ -154,7 +154,7 @@ Frontend Development Enthusiast 🚀
 
 # 📬 Connect
 
-* GitHub: Add your GitHub profile link here
+* GitHub:https://github.com/bhavyayedaboina
 * LinkedIn: https://www.linkedin.com/in/bhavya-yedaboina-212420372?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 
@@ -169,9 +169,13 @@ Frontend Development Enthusiast 🚀
 * Spotify-like Sidebar
 * Shuffle and Repeat Controls
 
----
+
 
 # 🙌 Acknowledgement
 
 Special thanks to CodeAlpha for providing this internship opportunity and helping improve frontend development skills.
+
+
+# codealpha_tasks
+Frontend Web Development Projects created during my CodeAlpha Internship.
 
