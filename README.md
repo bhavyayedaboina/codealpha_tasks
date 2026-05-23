@@ -169,7 +169,7 @@ Frontend Development Enthusiast 🚀
 # 📬 Connect
 
 * GitHub: https://github.com/bhavyayedaboina
-* LinkedIn: https://www.linkedin.com/in/bhavya-yedaboina-212420372?utm_source=share_via&utm_content=profile&utm_medium=member_android
+* LinkedIn: https://www.linkedin.com/in/bhavya-yedaboina-212420372/
 
 
 
