@@ -13,6 +13,7 @@ const volumeBtn=document.getElementById("volumeBtn");
 const volumePopup=document.querySelector(".volume-popup");
 const favBtn=document.getElementById("favBtn");
 const favoriteList=document.getElementById("favoriteList");
+const artist=document.getElementById("artist");
 let favoriteSongs=[];
 
    
@@ -21,26 +22,31 @@ const songs=[
   
    {
      title:"Inthandham song(SitaRamam) 🎶️",
+     artist:"SPB Charan",
      path:"songs/Inthandham.mp3" ,
      cover:"images/cute.jpeg"
    },
    {
      title:"I wanna be yours song 🎶️",
+     artist:"Alex Turner",
      path:"songs/I-Wanna-Be-Yours.mp3",
      cover:"images/bhavya.png"
    },
     {
      title:"Kollagotte song 🎶️",
+     artist:"Anirudh Ravichander",
      path:"songs/Kollagotte.mp3",
      cover:"images/anju.jpeg"
    },
    {
      title:"Adhento Gaani Vunnapaatuga song 🎶️",
+     artist:"Anirudh Ravichander",
      path:"songs/Adhento Gaani Vunnapaatuga .mp3",
      cover:"images/friends.jpeg"
    },
    {
      title:"Amma Amma Neevennela song 🌍️",
+     artist:"Sid Sriram",
      path:"songs/Amma Amma Nee Vennela.mp3",
      cover:"images/mom.jpeg"
    }
@@ -55,6 +61,7 @@ let isPlaying=false;
 function loadSong(index)
 {
  title.innerText=songs[index].title;
+ artist.innerText=songs[index].artist;
  audio.src=songs[index].path;
  cover.src=songs[index].cover;
  

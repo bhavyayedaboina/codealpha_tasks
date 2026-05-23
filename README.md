@@ -29,8 +29,6 @@ A modern and futuristic Music Player built using HTML, CSS, and JavaScript with 
 
 # 📂 Folder Structure
 
-
-```plaintext
 music_player/
 │
 ├── index.html
@@ -49,10 +47,9 @@ music_player/
 │   ├── bhavya2.jpeg
 │   ├── anju.jpeg
 │   ├── mom.jpeg
-│   └── friends.jpeg
+│   └── mugguru.jpeg
 │
 └── README.md
-```
 
 
 🚀 How to Run the Project
@@ -61,7 +58,7 @@ music_player/
 
 Download or clone this repository.
 
-git clone https://github.com/bhavyayedaboina/music-player.git
+git clone https://github.com/your-username/music-player.git
 
 
 
@@ -157,7 +154,7 @@ Frontend Development Enthusiast 🚀
 
 # 📬 Connect
 
-* GitHub:https://github.com/bhavyayedaboina
+* GitHub: Add your GitHub profile link here
 * LinkedIn: https://www.linkedin.com/in/bhavya-yedaboina-212420372?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 
@@ -172,13 +169,9 @@ Frontend Development Enthusiast 🚀
 * Spotify-like Sidebar
 * Shuffle and Repeat Controls
 
-
+---
 
 # 🙌 Acknowledgement
 
 Special thanks to CodeAlpha for providing this internship opportunity and helping improve frontend development skills.
-
-
-# codealpha_tasks
-Frontend Web Development Projects created during my CodeAlpha Internship.
 

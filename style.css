@@ -5,9 +5,12 @@
  gap:20px;
  border-radius:100px;
  padding:20px 20px;
+ margin-top:15px;
 } 
 body{
  display:flex;
+ 
+ font-family:'Poppins',sans-serif;
  
  justify-content:center;
  
@@ -71,8 +74,8 @@ body{
    
    z-index:-1; /* start moves behind the elements like buttons */
    
-  
-}
+
+} 
 @keyframes starsmv{
 
    from{
@@ -91,25 +94,35 @@ body{
 }      
     
 #player{
-background-color:#1e1e1e;
+    background:#111;
 
-padding:30px;
+    width:400px;
 
-border-radius:20px;
+    max-height:90vh;
 
-width:400px;
+    padding:30px;
 
-height:90vh;
+    border-radius:20px;
 
-overflow-y:auto;
+    text-align:center;
 
-text-align:center;
+    box-shadow:0 0 25px cyan;
 
-background:#111;
+    overflow-y:auto;   /* scroll inside the player */
 
-box-shadow:5px 5px 20px cyan;
+    overflow-x:hidden;
 
-scrollbar-width:none;
+    scrollbar-width:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+}
+
+#player::-webkit-scrollbar{
+    display:none;
 }
 
 h2{
@@ -123,7 +136,7 @@ width:220px;
 height:220px;
 object-fit:cover;   
 border-radius:50%;
-margin-bottom:20px;
+margin-bottom:10px;
 animation:rotate 5s linear infinite;
 animation-play-state:paused;
 }
@@ -399,4 +412,53 @@ cursor:pointer;
 
    transform:scale(1.1);
 }             
+
+/* TITLE WRAPPER */
+
+.title-wrapper{
+   width:100%;
+   overflow:hidden;
+   white-space:nowrap;
+   margin-top:5px;
+   margin:10px 0 5px 0;
+}
+
+/* SCROLLING SONG TITLE */
+
+#title{
+   display:inline-block;
+   color:white;
+   padding-left:100%;
+   white-space:nowrap;
+   animation:marquee 10s linear infinite;
+}
+
+/* ARTIST NAME */
+
+#artist{
+   color:#dcdcdc;
+   margin-top:-5px;
+   font-size:15px;
+}
+
+/* MARQUEE ANIMATION */
+
+@keyframes marquee{
+
+   from{
+      transform:translateX(0);
+   }
+
+   to{
+      transform:translateX(-100%);
+   }
+}
+@media(max-width:500px)
+{
+   #player{
+      width:90%;
+   }
+}
+
+
        

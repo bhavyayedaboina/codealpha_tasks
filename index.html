@@ -3,10 +3,11 @@
 <head>
 <title>Music Player</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<div class="stars"></div>  <!--fro stars floating in the background of the music player -->
+<div class="stars"></div>  <!--for stars floating in the background of the music player -->
 
 <div id="player">
 
@@ -20,10 +21,13 @@
           <button class="sideBtn" id="favBtn">🤍️</button> 
         </div>  
    </div>  
-   <h3 id="favTitle">❤️ Favorite Songs</h3>
+   <h3 id="favTitle"> ❤️ Favorite Songs</h3>
    <div id="favoriteList"></div>
-    
-  <h2 id="title">Song Name</h2>
+   <div id="title-wrapper"> 
+    <h2 id="title">Song Name</h2><br>
+   </div> 
+  <h3 id="artist"></h3>
+  
   
   <audio id="audio"></audio>
   
@@ -36,6 +40,7 @@
        /
        <span id="duration">00:00</span>
     </div> 
+    
   </div>
   
     
@@ -52,7 +57,7 @@
   </div>
   <div class="buttons">
     <button id="prev">⏪️</button>
-    <button id="play">◀️</button>
+    <button id="play">▶️</button>
     <button id="next">⏩️</button>
     <button id="playlistBtn">🎵️</button>
   </div>
