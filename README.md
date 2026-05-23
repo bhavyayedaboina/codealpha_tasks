@@ -27,13 +27,15 @@ A modern and futuristic Music Player built using HTML, CSS, and JavaScript with 
 - Audio API
 - CSS Animations
 
-# 📂 Folder Structure
+## 📂 Folder Structure
 
+```plaintext
 music_player/
 │
 ├── index.html
 ├── style.css
 ├── script.js
+├── README.md
 │
 ├── songs/
 │   ├── Inthandham.mp3
@@ -47,9 +49,13 @@ music_player/
 │   ├── bhavya2.jpeg
 │   ├── anju.jpeg
 │   ├── mom.jpeg
-│   └── mugguru.jpeg
+│   └── friends.jpeg
 │
-└── README.md
+└── screenshots/
+    ├── home.png
+    ├── playlist.png
+    └── favorites.png
+```
 
 
 🚀 How to Run the Project
@@ -58,7 +64,7 @@ music_player/
 
 Download or clone this repository.
 
-git clone https://github.com/your-username/music-player.git
+git clone https://github.com/bhavyayedaboina/music-player.git
 
 
 
@@ -132,9 +138,18 @@ This creates a futuristic animated UI effect.
 
 
 # 📸 Screenshots
-/home/rgukt-basar/Pictures/UI DESIGN.png
-/home/rgukt-basar/Pictures/UI DESIGN2.png
-/home/rgukt-basar/Pictures/UI DESIGN3.png
+
+### Main Player
+
+![Main Player](screenshots/home.png)
+
+### Playlist
+
+![Playlist](screenshots/playlist.png)
+
+### Favorites
+
+![Favorites](screenshots/favorites.png)
 
 
 
@@ -142,7 +157,6 @@ This creates a futuristic animated UI effect.
 
 This project was developed as part of the internship task for CodeAlpha.
 
----
 
 # 👩‍💻 Author
 
@@ -154,7 +168,7 @@ Frontend Development Enthusiast 🚀
 
 # 📬 Connect
 
-* GitHub: Add your GitHub profile link here
+* GitHub: https://github.com/bhavyayedaboina
 * LinkedIn: https://www.linkedin.com/in/bhavya-yedaboina-212420372?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
 
@@ -169,7 +183,6 @@ Frontend Development Enthusiast 🚀
 * Spotify-like Sidebar
 * Shuffle and Repeat Controls
 
----
 
 # 🙌 Acknowledgement
 
