@@ -6,7 +6,9 @@
  border-radius:100px;
  padding:20px 20px;
  margin-top:15px;
-} 
+}
+
+
 body{
  display:flex;
  
@@ -272,64 +274,7 @@ cursor:pointer;
     transition: 0.3s ease;
 }
 
-/*volumw button designing */
-/*#volumeBtn{
-   position:absolute;
-   left:-60px;
-   bottom:20px;
-   color:white;
-   width:20px;
-   height:20px;
-   border-radius:50%;
-   background-color:#222;
-   border:none;
-   box-shadow:0 0 15px #222;
-   cursor:pointer;
-   font-size:14px;
-   transition:0.5s;
-   box-shadow:0 0 15px cyan;
-}
-   
 
-.cover-container{
-
-   position:relative;
-
-   width:220px;
-
-   margin:auto;
-}
-/* Adding favourite songs by clicking this symbol 
-
-#likedBtn{
-
-   position:absolute;
-
-   right:-60px;
-
-   bottom:20px;
-
-   background:#222;
-
-   color:white;
-
-   border:none;
-
-   width:20px;
-
-   height:20px;
-
-   border-radius:50%;
-
-   font-size:14px;
-
-   cursor:pointer;
-
-   box-shadow:0 0 15px cyan;
-
-   transition:0.3s;
-   text-align:center;
-}  */  
 
 /*keeping that volume and liked symbols in middle of that circle */
 
@@ -414,51 +359,43 @@ cursor:pointer;
 }             
 
 /* TITLE WRAPPER */
-
-.title-wrapper{
+#title-wrapper{
    width:100%;
    overflow:hidden;
    white-space:nowrap;
-   margin-top:5px;
-   margin:10px 0 5px 0;
 }
 
-/* SCROLLING SONG TITLE */
-
+/* SONG TITLE */
 #title{
    display:inline-block;
    color:white;
-   padding-left:100%;
    white-space:nowrap;
-   animation:marquee 10s linear infinite;
-}
-
-/* ARTIST NAME */
-
-#artist{
-   color:#dcdcdc;
-   margin-top:-5px;
-   font-size:15px;
+   animation:marquee 10s linear infinite; 
 }
 
 /* MARQUEE ANIMATION */
-
 @keyframes marquee{
-
-   from{
-      transform:translateX(0);
+   0%{
+      transform:translateX(100%);
    }
 
-   to{
+   100%{
       transform:translateX(-100%);
    }
 }
+
 @media(max-width:500px)
 {
    #player{
       width:90%;
    }
 }
+
+#artist{
+color:white;
+}
+
+
 
 
        
