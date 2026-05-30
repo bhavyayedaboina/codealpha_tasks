@@ -46,10 +46,10 @@ music_player/
 │
 ├── images/
 │   ├── bhavya.png
-│   ├── bhavya2.jpeg
-│   ├── anju.jpeg
-│   ├── mom.jpeg
-│   └── friends.jpeg
+│   ├── sitaramam.jpeg
+│   ├── kollagotte.jpeg
+│   ├── Ammajpeg
+│   └── hi_nanna.jpeg
 │
 └── screenshots/
     ├── home.png
