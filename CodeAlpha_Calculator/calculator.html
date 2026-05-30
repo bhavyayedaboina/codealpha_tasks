@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <div class="calculator-container">
+
+    <!-- HISTORY PANEL -->
+    <div class="history-panel">
+      <div class="history-header">
+        <h2>History</h2>
+        <button id="clearHistory">Clear</button>
+      </div>
+
+    
+      <div id="historyList"></div>
+
+<button id="closeHistory">Close</button>
+    </div>
+
+    <!-- CALCULATOR -->
+    <div class="calculator">
+
+      <!-- TOP BAR -->
+      <div class="top-bar">
+        <h1>Advanced Calculator</h1>
+
+        <div class="theme-buttons">
+          <button id="darkTheme">🌙</button>
+          <button id="lightTheme">☀️</button>
+          <button id="neonTheme">⚡</button>
+        </div>
+      </div>
+      <button id="showHistory">☰ Show History</button>
+      <!-- DISPLAY -->
+      <div class="display-section">
+
+        <div id="previousExpression"></div>
+
+        <input
+          type="text"
+          id="display"
+          placeholder="0"
+          readonly
+        />
+      </div>
+
+      <!-- SCIENTIFIC BUTTONS -->
+      <div class="scientific-buttons">
+
+        <button class="operator" onclick="appendValue('sin(')">sin</button>
+
+        <button class="operator" onclick="appendValue('cos(')">cos</button>
+
+        <button class="operator" onclick="appendValue('tan(')">tan</button>
+
+        <button class="operator" onclick="appendValue('log(')">log</button>
+
+        <button class="operator" onclick="appendValue('sqrt(')">√</button>
+
+        <button class="operator" onclick="appendValue('Math.PI')">π</button>
+
+        <button class="operator" onclick="appendValue('**2')">x²</button>
+
+        <button class="operator" onclick="appendValue('%')">%</button>
+
+      </div>
+
+      <!-- MAIN BUTTONS -->
+      <div class="buttons">
+
+        <!-- ROW 1 -->
+        <button class="function-btn" onclick="clearDisplay()">AC</button>
+
+        <button class="function-btn" onclick="deleteLast()">⌫</button>
+
+        <button class="operator" onclick="appendValue('(')">(</button>
+
+        <button class="operator" onclick="appendValue(')')">)</button>
+
+        <!-- ROW 2 -->
+        <button onclick="appendValue('7')">7</button>
+
+        <button onclick="appendValue('8')">8</button>
+
+        <button onclick="appendValue('9')">9</button>
+
+        <button class="operator" onclick="appendValue('/')">÷</button>
+
+        <!-- ROW 3 -->
+        <button onclick="appendValue('4')">4</button>
+
+        <button onclick="appendValue('5')">5</button>
+
+        <button onclick="appendValue('6')">6</button>
+
+        <button class="operator" onclick="appendValue('*')">×</button>
+
+        <!-- ROW 4 -->
+        <button onclick="appendValue('1')">1</button>
+
+        <button onclick="appendValue('2')">2</button>
+
+        <button onclick="appendValue('3')">3</button>
+
+        <button class="operator" onclick="appendValue('-')">−</button>
+
+        <!-- ROW 5 -->
+        <button onclick="appendValue('0')">0</button>
+
+        <button onclick="appendValue('.')">.</button>
+
+        <button class="equal-btn" onclick="calculate()">=</button>
+
+        <button class="operator" onclick="appendValue('+')">+</button>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+
+</body>
+</html>
